@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 11</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="todo">
+    <section id="contenedor">
+
+        <input type="checkbox" class="btn-toggle" id="modo" />
+
+        <h1>Conversor de divisas</h1>
+        <input type="number" id="cantidad" min="1" required />
+        <select id="divisa">
+            <option value="usd">U$D</option>
+            <option value="euro">Euros</option>
+        </select>
+        <button id="convert">Convertir</button>
+        <p id="resultado"></p>
+    </section>
+
+    <script src="main.js"></script>
+
+    <script>
+        let $ = document;
+        const btn = $.querySelector(".toggle-btn");
+
+        btn.addEventListener("click", () => {
+            btn.classList.toggle("active");
+        });
+
+    </script>
+</body>
+
+</html>
